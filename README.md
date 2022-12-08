@@ -1,2 +1,1 @@
-# rsschool-cv
-CV Task
+https://github.com/TvaExperts/rsschool-cv/cv
