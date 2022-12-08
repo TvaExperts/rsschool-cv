@@ -1,1 +1,1 @@
-https://github.com/TvaExperts/rsschool-cv/cv
+https://TvaExperts.github.io/rsschool-cv/cv
