@@ -11,7 +11,7 @@
 # About Me #
 I am 34 years old, I am an individual entrepreneur. Today it has become difficult to work - circumstances have changed. I decided to study the IT direction. Previously, I worked as a project manager, but I realize that we need to delve deeper into different areas. And so I start with the frontend. Now it is necessary to adapt to the challenges of the time and I am ready for this.
 # Skills #
-
+* C# (basic knowledge)
 
 # Code Examples #
 ```
