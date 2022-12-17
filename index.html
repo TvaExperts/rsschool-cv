@@ -141,14 +141,14 @@
     int nfiltered = 0;<Br>
     int sfiltered = 0;<Br>
     Random rnd = new Random();<Br>
-    for (int x = 0; x < m_MarkMap.GetLength(0); x++)<Br>
+    for (int x = 0; x &lt; m_MarkMap.GetLength(0); x++)<Br>
     {<Br>
-        for (int y = 0; y < m_MarkMap.GetLength(1); y++)<Br>
+        for (int y = 0; y &lt; m_MarkMap.GetLength(1); y++)<Br>
         {
             if (m_MarkMap[x, y] == 0)<Br>
             {<Br>
-                m_AlgNeighbors = new List<CvPoint>();<Br>
-                List<CvPoint> points = new List<CvPoint>();<Br>
+                m_AlgNeighbors = new List&lt;CvPoint&gt;();<Br>
+                List&lt;CvPoint&gt; points = new List&lt;CvPoint&gt;();<Br>
                 CheckAlgNeighbors(new CvPoint(x, y));<Br>
                 points.Add(new CvPoint(x, y));<Br>
                 m_MarkMap[x, y] = -2;<Br>
@@ -161,9 +161,9 @@
                     m_MarkMap[p.X, p.Y] = -2;<Br>
                     CheckAlgNeighbors(p);<Br>
                 }<Br>
-                if (points.Count < numMinAreaOfObject.Value)<Br>
+                if (points.Count &lt; numMinAreaOfObject.Value)<Br>
                 {<Br>
-                    for (int i = 0; i < points.Count; i++)<Br>
+                    for (int i = 0; i &lt; points.Count; i++)<Br>
                     {<Br>
                         m_MarkMap[points[i].X, points[i].Y] = 1;<Br>
                     }<Br>
@@ -173,7 +173,7 @@
                 }<Br>
             }<Br>
         }<Br>
-    }        
+    }    
                             </code>
                         </pre>
                     </div>
