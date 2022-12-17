@@ -22,7 +22,8 @@ body {
 
 .main {
   flex: 1;
-  color: rgb(45, 45, 45);
+  
+
 }
 
 .footer {
@@ -82,6 +83,7 @@ body {
 .main-container-right{
   flex:1 ;
   background-color: white;
+  padding-bottom: 40px;
 }
 
 .header-nav {
@@ -187,7 +189,7 @@ body {
 
 
 .right-code-area{
-  padding: 12px 60px 52px 60px;
+  padding: 12px 60px ;
 }
 
 .right-code {
@@ -207,12 +209,14 @@ body {
 
 .right-list-item{
   color: rgb(45, 45, 45);
-  
+  text-decoration: none;
   font-size: 1.4rem;
   padding: 12px 60px;
 }
 
-
+.right-list-link{
+  text-decoration: none;
+}
 
 .footer-list {
   background-color: rgb(235, 235, 235);
