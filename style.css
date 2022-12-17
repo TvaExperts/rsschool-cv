@@ -1,18 +1,17 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: rgb(215, 215, 215);
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(215, 215, 215);
+}
 
 .header {
   color: rgb(45, 45, 45);
@@ -35,54 +34,53 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.main-container-left{
-  background-color: rgb(27, 30, 47);
+.main-container-left {
   width: 500px;
+  color: white;
+  background-color: rgb(27, 30, 47);
 }
 
-.left-image{
-  padding: 100px 0px ;
+.left-image {
+  padding: 100px 0px;
 }
 
 .img-round {
-  border-radius: 300px; 
-  border: 5px solid rgb(255, 204, 1); 
-  box-shadow: 0 0 7px #666; 
+  width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  border-radius: 300px; 
+  border: 5px solid rgb(255, 204, 1); 
+  box-shadow: 0 0 7px #666; 
 }
 
-.left-header{
+.left-header {
   background-color: rgb(36, 37, 55);
   border-left: 25px solid rgb(255, 204, 1);
 }
 
-.left-header-bot{
+.left-header-bot {
   border-bottom: 5px solid rgb(57, 58, 78);
 }
 
-.left-caption{
-  padding:  9px 0px 5px 0px;
+.left-caption {
+  padding:  9px 0px 5px 35px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: white;
   font-size: 2rem;
   font-weight: 400;
-  padding-left: 35px;
 }
 
-
-.main-container-right{
-  flex:1 ;
-  background-color: white;
+.main-container-right {
   padding-bottom: 40px;
+  flex:1;
+  background-color: white;
+  color: rgb(45, 45, 45);
 }
 
 .header-nav {
-  background-color: rgb(235, 235, 235);
   padding: 0px 12px;
+  background-color: rgb(235, 235, 235);
 }
 
 .header-nav-list {
@@ -98,55 +96,53 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.2rem; 
+  color: rgb(45, 45, 45);
 }
 
-.left-list{
-  list-style: none;
-  color: white;
+.left-list {
   padding: 40px 60px;
+  list-style: none;
 }
 
-.left-list-item{
+.left-list-item {
   padding: 12px 0px;
 }
 
-.left-list-caption{
-  font-size: 1.4rem;
+.left-list-caption {
   margin-bottom: 5px;
+  font-size: 1.4rem;
 }
 
-.left-list-val{
+.left-list-val {
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
 }
 
-.right-name-area{
+.right-name-area {
   padding: 106px 0px ;
   margin: 60px 0px;
   border-left: 25px solid rgb(255, 204, 1);
   background-color: rgb(235, 235, 235);
-  color: rgb(45, 45, 45);
 }
 
-.right-surname-text{
-  padding: 100px 15px 100px 35px ;
+.right-surname-text {
+  padding: 100px 15px 100px 35px;
+  display:inline;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 3rem;
   font-weight: 600;
-  color: rgb(45, 45, 45);
-  display:inline
 }
 
-.right-name-text{
+.right-name-text {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 3rem;
   font-weight: 400;
 }
 
-.right-spec-text{
+.right-spec-text {
   margin-top: 20px;
   padding-left: 35px;
   text-transform: uppercase;
@@ -155,62 +151,57 @@ body {
   letter-spacing: 2px;
 }
 
-.right-header-area{
+.right-header-area { 
   margin: 40px 0px 40px;
   border-left: 25px solid rgb(255, 204, 1);
   background-color: rgb(235, 235, 235);
 }
 
-.right-header-caption{
-  
+.right-header-caption {
+  padding: 10px 0px 9px 35px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: rgb(45, 45, 45);
   font-size: 2rem;
-  padding: 10px 0px 9px 35px;
 }
 
 .right-text {
-  padding: 12px 60px ;
-  color: rgb(45, 45, 45);
+  padding: 12px 60px;
   font-size: 1.2rem;
   line-height: 30px;
 }
 
-.right-code-area{
+.right-code-area {
   padding: 12px 60px ;
 }
 
 .right-code {
-  color: rgb(45, 45, 45);
+  padding-top: 12px;
   font-size: 1.2rem;
   line-height: 0.8;
-  padding-top: 12px;
   background-color: rgb(235, 235, 235);
 }
 
-.right-list{
+.right-list {
   list-style: none;
 }
 
-.right-list-item{
-  color: rgb(45, 45, 45);
+.right-list-item {
+  padding: 12px 60px;
   text-decoration: none;
   font-size: 1.4rem;
-  padding: 12px 60px;
 }
 
-.right-list-link{
+.right-list-link {
   text-decoration: none;
 }
 
 .footer-list {
-  background-color: rgb(235, 235, 235);
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
   padding: 20px 20px;
+  background-color: rgb(235, 235, 235);
 }
 
 .footer-list-item {
@@ -219,11 +210,12 @@ body {
   font-size: 1.4rem;
 }
 
-.img-logo{
+.img-logo {
   height: 40px;
   vertical-align: middle;
 }
 
-.footer-list-link{
+.footer-list-link {
   text-decoration: none;
+  color: rgb(45, 45, 45);
 }
