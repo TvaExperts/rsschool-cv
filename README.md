@@ -1,2 +1,2 @@
-# rsschool-cv
-CV Task
+https://TvaExperts.github.io/rsschool-cv/cv 
+https://TvaExperts.github.io/rsschool-cv/
