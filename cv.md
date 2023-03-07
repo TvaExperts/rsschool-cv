@@ -2,7 +2,6 @@
 
 # My Contact Info: #
 * **Adress:** Russian Federation, Saint Petersburg
-* **Phone:** [+7 (903) 667-37-78](tel:+79036673178)
 * **E-mail:** [trachenko.v.a@gmail.com](mailto:trachenko.v.a@gmail.com)
 * **Telegram:** [@TVA_Experts](https://t.me/TVA_Experts)
 * **Discord:** TvaExperts#9517
