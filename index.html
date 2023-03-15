@@ -45,7 +45,7 @@
                         </li>
                         <li class="left-list-item">
                             <p class="left-list-caption">Phone</p>
-                            <a class="left-list-val" href="tel:+79036673178">+7 (903) 667-37-78</a>
+                            <a class="left-list-val" href="tel:+79036673178">+7&nbsp;(903)&nbsp;667&#8209;37&#8209;78</a>
                         </li>
                         <li class="left-list-item">
                             <p class="left-list-caption">E-mail</p>
@@ -138,41 +138,41 @@
                     <div class="right-code-area">
                         <pre class="right-code">
                             <code>
-    int nfiltered = 0;<Br>
-    int sfiltered = 0;<Br>
-    Random rnd = new Random();<Br>
-    for (int x = 0; x &lt; m_MarkMap.GetLength(0); x++)<Br>
-    {<Br>
-        for (int y = 0; y &lt; m_MarkMap.GetLength(1); y++)<Br>
+    int nfiltered = 0;<br>
+    int sfiltered = 0;<br>
+    Random rnd = new Random();<br>
+    for (int x = 0; x &lt; m_MarkMap.GetLength(0); x++)<br>
+    {<br>
+        for (int y = 0; y &lt; m_MarkMap.GetLength(1); y++)<br>
         {
-            if (m_MarkMap[x, y] == 0)<Br>
-            {<Br>
-                m_AlgNeighbors = new List&lt;CvPoint&gt;();<Br>
-                List&lt;CvPoint&gt; points = new List&lt;CvPoint&gt;();<Br>
-                CheckAlgNeighbors(new CvPoint(x, y));<Br>
-                points.Add(new CvPoint(x, y));<Br>
-                m_MarkMap[x, y] = -2;<Br>
-                while (m_AlgNeighbors.Count > 0)<Br>
-                {<Br>
-                    int index = rnd.Next(m_AlgNeighbors.Count - 1);<Br>
-                    CvPoint p = m_AlgNeighbors[index];<Br>
-                    m_AlgNeighbors.RemoveAt(index);<Br>
-                    points.Add(p);<Br>
-                    m_MarkMap[p.X, p.Y] = -2;<Br>
-                    CheckAlgNeighbors(p);<Br>
-                }<Br>
-                if (points.Count &lt; numMinAreaOfObject.Value)<Br>
-                {<Br>
-                    for (int i = 0; i &lt; points.Count; i++)<Br>
-                    {<Br>
-                        m_MarkMap[points[i].X, points[i].Y] = 1;<Br>
-                    }<Br>
-                    nfiltered++;<Br>
-                    sfiltered += points.Count;<Br>
-                    continue;<Br>
-                }<Br>
-            }<Br>
-        }<Br>
+            if (m_MarkMap[x, y] == 0)<br>
+            {<br>
+                m_AlgNeighbors = new List&lt;CvPoint&gt;();<br>
+                List&lt;CvPoint&gt; points = new List&lt;CvPoint&gt;();<br>
+                CheckAlgNeighbors(new CvPoint(x, y));<br>
+                points.Add(new CvPoint(x, y));<br>
+                m_MarkMap[x, y] = -2;<br>
+                while (m_AlgNeighbors.Count > 0)<br>
+                {<br>
+                    int index = rnd.Next(m_AlgNeighbors.Count - 1);<br>
+                    CvPoint p = m_AlgNeighbors[index];<br>
+                    m_AlgNeighbors.RemoveAt(index);<br>
+                    points.Add(p);<br>
+                    m_MarkMap[p.X, p.Y] = -2;<br>
+                    CheckAlgNeighbors(p);<br>
+                }<br>
+                if (points.Count &lt; numMinAreaOfObject.Value)<br>
+                {<br>
+                    for (int i = 0; i &lt; points.Count; i++)<br>
+                    {<br>
+                        m_MarkMap[points[i].X, points[i].Y] = 1;<br>
+                    }<br>
+                    nfiltered++;<br>
+                    sfiltered += points.Count;<br>
+                    continue;<br>
+                }<br>
+            }<br>
+        }<br>
     }    
                             </code>
                         </pre>
